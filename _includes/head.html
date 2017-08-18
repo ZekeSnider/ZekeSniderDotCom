@@ -35,8 +35,14 @@
     <meta name="twitter:description" content="{{ page.description }}">
     <meta content="{{ page.description }}" property="og:description">
   {% else %}
-    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
-    <meta content="{{ page.content | strip_html | xml_escape | truncate: 200 }}" property="og:description">
+    {% if page.content != "" %}
+      <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+      <meta content="{{ page.content | strip_html | xml_escape | truncate: 200 }}" property="og:description">
+    {% else %}
+      <meta name="twitter:description" content="{{ site.description | escape }}">
+      <meta content="{{ site.description | escape }}" property="og:description">
+    {% endif %}
+    
   {% endif %}
 
   {% if page.image %}

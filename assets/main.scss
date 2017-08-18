@@ -1,0 +1,97 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+.site-header {
+	background-color: #2ECC40;
+}
+
+#headerBackground {
+	height: 200px;
+
+	overflow:hidden;
+	display:block;
+}
+
+.site-title {
+	color:black;
+}
+
+.background-blur {
+
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a.site-title {
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+}
+
+span.caption {
+	display: table;
+	margin: 0 auto;
+	font-style: italic;
+	font-weight: 200;
+}
+
+.fullwidthimg {
+	width: 100%;
+}
+.notfullwidthimage {
+	display: block;
+	margin: auto;
+}
+
+.brand-icon {
+	width: 20px;
+	margin-right: 10px;
+}
+
+.post-link-h2 {
+	margin-bottom:0px;
+}
+
+span.post-meta {
+	margin-bottom: 15px;
+}
+
+.pagebannerimg {
+	width: 100%;
+}
+
+hr {
+	margin-bottom:20px;
+}
+
+.sidebyimage {
+	display: block;
+	/* position: absolute; */
+}
+
+@media only screen and (min-width:700px){
+	.sidebyimage { 
+		margin-right:30px;
+		max-width: 50%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width:700px){
+	.sidebyimage{
+		margin: auto;
+		width: 100%;
+	}
+	.sidebyimagecontainer {
+		margin-bottom:15px;
+	}
+}

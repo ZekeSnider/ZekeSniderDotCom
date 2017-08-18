@@ -1,0 +1,73 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>, <a href="{{ "/feed.json" | relative_url }}">via JSON Feed</a></p>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.instagram_username %}
+          <li>
+            {% include icon-instagram.html username=site.instagram_username %}
+          </li>
+          {% endif %}
+
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          <li>
+            <a href="https://stackoverflow.com/users/7317954/zeke-s"><span class="icon icon--so"><img class="brand-icon" src="{{ site_url }}/assets/so-icon-color.png"</span><span class="username">Zeke S.</span></a>
+          </li>
+
+          {% if site.youtube_username %}
+          <li>
+            {% include icon-youtube.html username=site.youtube_username %}
+          </li>
+          {% endif %}
+
+          {% if site.applemusic_username %}
+          <li>
+            {% include icon-applemusic.html username=site.applemusic_username %}
+          </li>
+          {% endif %}
+
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

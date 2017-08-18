@@ -6,8 +6,9 @@ categories: apple
 image: ecobee.jpeg
 ---
 
-{% include sideByImage.html file="WorkingEcobee.jpeg" description="It's working!" %}
 We’ve always been using an old simple thermostat for use with the house’s stove which uses a millivolt connection. This is the only heating appliance in the house, and there’s no AC (perks of living in Washington). But recently, I decided that it was time to upgrade to a smart thermostat.  
+
+{% include sideByImage.html file="WorkingEcobee.jpeg" description="It's working!" %}
 
 I really wanted HomeKit support on the thermostat, so I ended up going with the [Ecobee 3 Lite](https://www.amazon.com/Ecobee3-Thermostat-Wi-Fi-Works-Amazon/dp/B01K48T09Y/ref=sr_1_2?ie=UTF8&qid=1481598019&sr=8-2&keywords=ecobee). It is a cheaper version of the [Ecobee 3](https://www.amazon.com/Ecobee3-Thermostat-Sensor-Generation-Amazon/dp/B00ZIRV39M/ref=sr_1_1?ie=UTF8&qid=1481598019&sr=8-1&keywords=ecobee) that skips the remote sensors and some other premium features. I figured the lite would be perfect for my smaller use case, and because there’s only one source of heat so the remote sensors wouldn’t be all that useful.  
 

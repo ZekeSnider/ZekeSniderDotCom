@@ -11,30 +11,58 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
-  
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@tngzeke">
   <meta name="twitter:creator" content="@tngzeke">
+
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}">
+    <meta content="{{ page.title }}" property="og:title">
+    <meta content="article" property="og:type">
   {% else %}
     <meta name="twitter:title" content="{{ site.title }}">
+    <meta content="{{ site.title }}" property="og:title">
+    <meta content="website" property="og:type">
   {% endif %}
 
   {% if page.url %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
   {% endif %}
 
   {% if page.description %}
     <meta name="twitter:description" content="{{ page.description }}">
+    <meta content="{{ page.description }}" property="og:description">
   {% else %}
     <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+    <meta content="{{ page.content | strip_html | xml_escape | truncate: 200 }}" property="og:description">
   {% endif %}
 
   {% if page.image %}
-    <meta name="twitter:image:src" content="{{ site.url }}/assets/{{ page.image }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/{{ page.image }}">
+    <meta content="{{ site.url}}/assets/{{ page.image }}" property="og:image">
   {% else %}
     <meta name="twitter:image:src" content="{{ site.url }}/assets/logo.png">
+    <meta content="{{ site.url }}/assets/logo.png" property="og:image">
+  {% endif %}
+
+  {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+
+  <meta content="{{ site.title }}" property="og:site_name">
+
+  {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section">
+    {% endfor %}
+  {% endif %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag">
+    {% endfor %}
   {% endif %}
   
   {% if jekyll.environment == 'production' and site.google_analytics %}

@@ -28,4 +28,4 @@ Here's a few of my current favorite things:
 
 To see me elsewhere on the web, check the links in the footer.
 
-This blog is a completely static site built using [Jekyll](https://jekyllrb.com). The source is available [here](https://github.com/zekesnider).
+This blog is a completely static site built using [Jekyll](https://jekyllrb.com). The source is available [here](https://github.com/ZekeSnider/ZekeSniderDotCom).

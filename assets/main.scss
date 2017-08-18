@@ -19,8 +19,6 @@
 }
 
 .background-blur {
-
-
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
@@ -73,13 +71,14 @@ hr {
 	margin-bottom:20px;
 }
 
-.sidebyimage {
+.sidebyimagecontainer {
 	display: block;
 	/* position: absolute; */
+	margin-bottom:25px;
 }
 
 @media only screen and (min-width:700px){
-	.sidebyimage { 
+	.sidebyimagecontainer { 
 		margin-right:30px;
 		max-width: 50%;
 		float: left;
@@ -87,7 +86,7 @@ hr {
 }
 
 @media only screen and (max-width:700px){
-	.sidebyimage{
+	.sidebyimagecontainer{
 		margin: auto;
 		width: 100%;
 	}

@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "Blogging in 2017"
+date:   2017-08-18 22:15:40 -0700
+categories: blogging
+image: jekyll.png
+---
+
+I've always enjoyed blogging, but have been very lazy recently about getting around to it. And part of that is because I haven't really had a good home for all my content. I've been using [Medium](https://medium.com) because it's easy and fast. The design is pretty good and has suited my needs. But I really want a place that's my very own on the WWW. One that's not owned by any corporation, that I have (almost) complete control over. 
+
+I still think Medium is a great platform, and I will probably continue to cross-post my important pieces there. There's still a lot of insightful content I read on Medium. However, I would like to have a place I completely manage and own, so that's why we're here. I think it's important that the web doesn't become too centralized on large services. I post enough of my content on Twitter, Instagram, etc. Some of it should be hosted by me.
+
+Also Medium has added [dickbars](https://daringfireball.net/2017/06/medium_dickbars) and some other questionable design decisions that take away from the most import thing: content.
+
+# Choosing a blogging engine
+
+When deciding what blogging engine to use, I was mainly debating between Wordpress and Ghost. Wordpress is a battle tested CMS that is used very widely. I've used it a lot in the past and have done some contracting work with it. Wordpress is great at what it does.
+
+But it does come with its fair share of bloat. And upkeep with installing security upgrades, patching PHP, managing the server, installing plugins, etc. And because of its wide range of functionality, I find that theming it can be overly complicated. I wanted to keep it simple for my blog, and I just thought that managing a Wordpress install and theme would be overkill.
+
+So I also took a look at Ghost, which is a new up and comer in the area. It's built using Node.js and Express, which is a stack I am fond of. I spun up a $10 digital ocean droplet to take Ghost for a spin. I liked it, but again seemed overkill for what I wanted. Also it seems a lot of open source themes I was trying out weren't working due to lack of updates for the latest versions of Ghost.
+
+Ghost overall seemed very promising, but again overkill. A lot of the themes I was looking at weren't striking my fancy. And hosting it on Digital Ocean would incur additional costs over the shared hosting I'm already paying for at dreamhost. 
+
+# Jekyll
+
+This brings us to Jekyll, which is what I ended up going with. Jekyll is an awesome tool which allows you to generate a completely static site using [Markdown](https://daringfireball.net/projects/markdown/syntax). The templates are easily modifiable, and you have complete control over what goes into your site.
+
+Let me just say, I *love* Jekyll. I am a total convert. The default theme is awesome, minimal, and was easy to customize to my liking. I am very satisfied with how the look of my blog ended up. I wanted something minimal and easy to read, with nice colors, and a unique style so that it doesn't look like a generic template.
+
+I am a huge promponent of Markdown, so the writing format is a huge plus for me. I want to write my posts in Markdown no matter what engine I'm using. I really like how Jekyll formats and organizes the project files as well.
+
+Stepping back down to a completely static site is actually very nice. The current WWW has so many sites with insane bloat, it's nice to keep my site to a fast loading lean machine. Just content, that's it. My site does not have a single line of JavaScript. Hopefully it can stay that way. No need for AMP here, just natively fast loading pages.
+
+
+# Importing Posts
+
+I only had 4 posts on Medium, so this wasn't a huge undertaking. I decided to do it manually because of how few posts I have. There's no importer plugin that I know of. I would of written one myself if I had more posts, but it just wouldn't be worth it with the number I have. 
+
+In a few hours I was done. Most of my issues were relating to layout of images. Jekyll doesn't have many images helpers built in, so I added some which mimick the responsive layout functionality of Medium's image embeds. I still have some tweaking to do, but I think it's pretty good for the most part. Because I implemented them with _includes, they will be easy to modify later.
+
+
+# JSON Feed
+
+[JSON Feed](https://jsonfeed.org) is a very new (May 2017) syndication format designed by Manton Reece and Brent Simmons. I really like the idea of it, and wanted to support it on my blog for the novelty of it if possible.
+
+Luckily, there is already an [open source project](https://github.com/vallieres/jekyll-json-feed) which implements JSON feed for Jekyll. With some minor modifications, my JSON Feed was ready to go. You can check it out [here]({{ site.url }}/feed.json)! Even if there's not much that parses JSON feed yet, I like the idea of supporting it. 
+
+# Open Graph / Twitter Cards
+
+I wanted to add the meta tags used by Twitter/Facebook to create rich previews. Also because they are used by iMessage, and I really wanted the previews to look nice in there. This was fairly easy to accomplish by modifying my header template. There are some [great](http://davidensinger.com/2013/04/adding-open-graph-tags-to-jekyll/) [articles](http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/) out there already which helped out a lot.
+
+With some minor modification and tweaking in Facebook's open graph validator, my rich content previews were set. 
+
+{% include fullWidthImage.html file="RichiMessage.png" description="Beautiful" %}
+
+# Hosting
+
+Jekyll has awesome integration with [Github Pages](https://pages.github.com), which allows for free and easy hosting of your jekyll site with built in source control. This is a excellent option for most, especially considering the price (free) and ease of use.
+
+Unfortunately, [Github Pages does not current support HTTPS for custom domains](https://github.com/isaacs/github/issues/156). They support HTTPS for *.github.io domains which is great, but I really want to host my site on my own domain (zekesnider.com). So I decided to just copy over the files to my Dreamhost shared hosting instance.
+
+I might set up a better automatic commit pull workflow in the future, but for now I just copy over the _site directory using Transmit. I already had a letsencrypt cert setup, so I customized the .htaccess file, and I was set! If GitHub adds support for HTTPS on custom domains in the future, I will probably switch over to that.
+
+I would like to improve the deployment workflow in the future, just so I can easily update my blog on the go from my iPad (or iPhone). Hoping this is possible with some combination of Working Copy, Coda, and better server tooling. This is a nice to have, hopefully the frequency of my postings will necessitate this in the future.
+
+# Analytics
+
+I didn't want any ad tracking JavaScript on my site at all. In fact, the site currently has no JavaScript on it all. But I also wanted to have a general access log so I know how many people are visiting my site. 
+
+[Dreamhost Site Statistics](https://help.dreamhost.com/hc/en-us/articles/216510258-Panel-statistics-overview) seemed like the best solution to this problem (considering it's built into the hosting). I have yet to fully configure it, but I might do another post on this once I get some actionable data built up.
+
+# Conclusion
+
+So there you have it. With Jekyll I have a very fast loading, nice looking site with no ad tracking and 0 lines of JavaScript. It fits my needs very well, and I hope that I can keep the blogging habbit for this redesign to be worth my effort. Thanks for reading, and stay tuned for more! You can check out the source for my blog [here](https://github.com/ZekeSnider/ZekeSniderDotCom) if you like.
+

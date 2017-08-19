@@ -2,14 +2,14 @@
 layout: post
 title:  "Why I Like Vinyl"
 date:   2017-05-17 19:13:40 -0700
-categories: videogames review
+categories: music
 image: spinningvinyl.gif
 ---
 Recently I, a 20 year old, have taken a liking to vinyl records. And not because it’s an old medium and I want to be a hipster. I am not “nostalgic” about CDs, casset tapes, or other antiquated mediums. There are solid reasons for why I specifically like this antiquated medium.
 
 ## The age of streaming
 
-When I listen to music, 90% of the time I am streaming it. I use Apple Music and really enjoy the service. I’m not arguing that Vinyl is the best way to listen to music. The convenience and pricing of streaming services are king, and will stay that way. If anything, I would argue that streaming is the best platform for most consumers. It offers a the most flexibility, and tons of variety for a low price.
+{% include sideByImage.html file="AppleMusicForYou.jpeg" description="" %} When I listen to music, 90% of the time I am streaming it. I use Apple Music and really enjoy the service. I’m not arguing that Vinyl is the best way to listen to music. The convenience and pricing of streaming services are king, and will stay that way. If anything, I would argue that streaming is the best platform for most consumers. It offers a the most flexibility, and tons of variety for a low price.
 And you can listen anytime, anywhere. Personally I have my whole library downloaded offline, which is a another plus of most streaming services. You can still have the benefit of an offline cache with the flexibility of an extremely large catalog.
 
 ## Physical collections

@@ -9,7 +9,9 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-
+        {% if post.image %}
+          <img class="pagebannerimg" src="{{ site.url }}/assets/{{ post.image }}">
+        {% endif %}
         <h2 class="post-link-h2">
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>

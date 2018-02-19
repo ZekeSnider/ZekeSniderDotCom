@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The personal site of Zeke Snider. My thoughts and ramblings, in blog form.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zekesnider.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tngzeke
+twitter_username: ZekeSnider
 github_username: ZekeSnider
 instagram_username: ZekeSnider
 applemusic_username: Snider
@@ -32,6 +32,12 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-minifier
+  - jekyll-compress-images
+
+compress_images:
+  images_path: "assets/*.{gif,png,jpg,jpeg,svg}"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

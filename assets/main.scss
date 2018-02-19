@@ -5,10 +5,11 @@
 @import "minima";
 .site-header {
 	background-color: #2ECC40;
+	border-top: none;
 }
 
 #headerBackground {
-	max-height: 200px;
+	max-height: 100px;
 
 	overflow:hidden;
 	display:block;

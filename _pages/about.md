@@ -2,20 +2,21 @@
 layout: page
 title: About Me
 permalink: /about/
+menu: main
 ---
 
 Hi, I'm Zeke. Welcome to my personal site. 👋
 
-I'm a 20 year old software developer working in the Seattle area. I am currently employed at [Fujifilm SonoSite](https://sonosite.com). I mainly do web development, and (begrudingly) some Windows development. In my free time I enjoy experiementing with web technologies, and developing for Apple platforms.
+I'm a 21 year old software developer working in the Seattle area. I am currently employed at [Fujifilm SonoSite](https://sonosite.com). I mainly do web development, and (begrudgingly) too much Windows development. In my free time I enjoy experimenting with web technologies, and developing for Apple platforms.
 
 My hobbies include:
 + Programming
 + Music
 + Video Games
 + Studying Japanese
-+ Reading news (poltics)
++ Reading news (politics)
 + Long Drives
-+ Engaging in unintersting activites with friends
++ Engaging in uninteresting activities with friends
 
 
 Here's a few of my current favorite things:
@@ -23,7 +24,7 @@ Here's a few of my current favorite things:
 + [Project Diva](https://en.wikipedia.org/wiki/Hatsune_Miku:_Project_DIVA)
 + [Lorde](https://en.wikipedia.org/wiki/Lorde)
 + [Taylor Swift](https://en.wikipedia.org/wiki/Taylor_Swift)
-+ Apple hardware & software
++ [Apple hardware & software](https://apple.com)
 + [Swift (Programming language)](https://swift.org)
 
 To see me elsewhere on the web, check the links in the footer.

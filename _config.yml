@@ -16,7 +16,7 @@
 title: Zeke Snider
 email: zekesnider@me.com
 description: > # this means to ignore newlines until "baseurl:"
-  The personal site of Zeke Snider. My thoughts and ramblings, in blog form.
+  The personal site of Zeke Snider. Random notes and thoughts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zekesnider.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ZekeSnider
@@ -26,14 +26,14 @@ applemusic_username: Snider
 youtube_username: [UCytERd3yUZB8y8Bxr3AE6Bg, Zeke]
 include: ["_pages"]
 permalink: /:title/
+future: false
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-minifier
-  - jekyll-compress-images
+  - jekyll-sitemap
 
 compress_images:
   images_path: "assets/*.{gif,png,jpg,jpeg,svg}"

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Instagram Links
+permalink: /instagram/
+---
+
+{% assign posts = site.tags["instagram"] %}
+{% for post in posts %}
+	{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+	<a class="post-link" href="{{ post.url | relative_url }}"><span class="large-post-date">{{ post.date | date: date_format }}</span></a>
+
+	{% if post.image %}
+	  <img class="pagebannerimg" src="{{ site.url }}/assets/{{ post.image }}">
+	{% endif %}
+	<h2 class="post-link-h2">
+	  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+	</h2>
+
+	{{ post.content }}
+{% endfor %}

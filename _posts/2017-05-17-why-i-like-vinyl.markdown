@@ -3,7 +3,8 @@ layout: post
 title:  "Why I Like Vinyl"
 date:   2017-05-17 19:13:40 -0700
 categories: music
-image: spinningvinyl.gif
+image: spinningvinyl.jpg
+imageAlt: "Spinning vinyl record gif"
 ---
 Recently I, a 20 year old, have taken a liking to vinyl records. And not because it’s an old medium and I want to be a hipster. I am not “nostalgic” about CDs, casset tapes, or other antiquated mediums. There are solid reasons for why I specifically like this antiquated medium.
 

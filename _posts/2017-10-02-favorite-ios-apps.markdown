@@ -4,6 +4,7 @@ title:  "My Favorite iOS Apps"
 date:   2017-10-02 21:15:40 -0700
 categories: favorites
 image: iOS.jpeg
+imageAlt: "Gold iPhone 8 and 8 Plus"
 ---
 
 Here's my *highly* anticipated list of favorite iOS apps. A follow up to my [favorite Mac apps](/favorite-mac-apps/).

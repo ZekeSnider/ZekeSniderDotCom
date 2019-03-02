@@ -4,6 +4,7 @@ title:  "Reputation Review"
 date:   2017-11-13 21:15:40 -0700
 categories: review
 image: reputation.jpg
+imageAlt: "Taylor Swift Reputation album cover"
 ---
 
 Reputation is Taylor Swift’s sixth studio album and it is lit af. It is 1989’s sexy older sibling, drinking alcohol and having sex. Reputation has a new, distinct sound. It is significantly different than the composition of 1989, but it is a clear evolution of that same “poppy” sound. It is nuanced, with every song exploring different formats under the same style.

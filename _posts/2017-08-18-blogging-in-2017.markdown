@@ -4,6 +4,7 @@ title:  "Blogging in 2017"
 date:   2017-08-18 22:15:40 -0700
 categories: blogging
 image: jekyll.png
+imageAlt: "Jekyll homepage"
 ---
 
 I've always enjoyed blogging, but have been very lazy recently about getting around to it. And part of that is because I haven't really had a good home for all my content. I've been using [Medium](https://medium.com) because it's easy and fast. The design is pretty good and has suited my needs. But I really want a place that's my very own on the WWW. One that's not owned by any corporation, that I have (almost) complete control over. 

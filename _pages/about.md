@@ -7,7 +7,7 @@ menu: main
 
 Hi, I'm Zeke. Welcome to my personal site. 👋
 
-I'm a 21 year old software developer working in the Seattle area. I am currently employed at [Fujifilm SonoSite](https://sonosite.com). I mainly do web development, and (begrudgingly) too much Windows development. In my free time I enjoy experimenting with web technologies, and developing for Apple platforms.
+I am currently a software engineer at [Square](https://squareup.com) in San Francisco, California. I work on full stack web development. In my free time I enjoy experimenting with web technologies, and developing for Apple platforms.
 
 My hobbies include:
 + Programming

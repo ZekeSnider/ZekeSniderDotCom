@@ -4,6 +4,7 @@ title:  "Project Diva X Review"
 date:   2016-07-05 19:13:40 -0700
 categories: videogames review
 image: ProjectDivaBox.jpeg
+imageAlt: "Hatsune Miku Project Diva X box art"
 ---
 For those new to the series, X is the third project diva game on the Playstation Vita. The two others are f and F2nd, which are the same game for the most part with different song lists and minor changes. The basic gameplay is a rhythm game based around the playstation shape buttons, hitting the right notes in time with the music. You can watch a few gameplay videos or try to the demo to find out if it clicks for you or not pretty quickly.
 

@@ -4,6 +4,7 @@ title:  "Applying to the WWDC scholarship"
 date:   2016-05-02 19:13:40 -0700
 categories: apple
 image: wwdc-submission.png
+imageAlt: "WWDC submission thank you image"
 ---
 
 I submitted my application to Apple’s WWDC 2016 student scholarship 2 days ago. It seems like every year I really want to do this, but this year I finally did. It feels like a great accomplishment, even if I don’t win. I’ve been learning Swift ever since The [Swift Programming Language book](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11) dropped at WWDC 2014, but I’ve always struggled with Cocoa frameworks because there’s just so much there to learn.  
@@ -47,8 +48,8 @@ I plan to continue development of Z Split, and submit it to the App Store in the
 + Maps integration for automatic splitting for location based activities
 + Polish the UX, add some sounds and fancy animations to make things more personable
 + Add more run control buttons such as undo, skip.
-+ More staticstics on the run page. Gold splits, comparisons to best segments, possible time save, delta time save over last segment, etc. Lots to do here.
-+ More advanced staticstics on saved run histories. There’s lots of interesting information that could be generated based on previous runs because it’s stored in Core Data. Just gotta write some queries.
++ More statistics on the run page. Gold splits, comparisons to best segments, possible time save, delta time save over last segment, etc. Lots to do here.
++ More advanced statistics on saved run histories. There’s lots of interesting information that could be generated based on previous runs because it’s stored in Core Data. Just gotta write some queries.
 + Code refactoring
 + And eventually… An OS X version! (Fingers crossed for UXKit coming to the mac)
 

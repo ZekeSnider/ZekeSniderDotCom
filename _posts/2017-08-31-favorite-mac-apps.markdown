@@ -4,6 +4,7 @@ title:  "My Favorite Mac Apps"
 date:   2017-08-30 21:15:40 -0700
 categories: favorites
 image: macos.png
+imageAlt: "macOS High Sierra desktop"
 ---
 
 Here's a list of my favorite (third party) Mac apps.

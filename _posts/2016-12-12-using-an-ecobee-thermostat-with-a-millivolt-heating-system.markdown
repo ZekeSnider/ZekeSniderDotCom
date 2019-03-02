@@ -4,6 +4,7 @@ title:  "Using an Ecobee Thermostat with a Millivolt Heating System"
 date:   2016-12-12 19:13:40 -0700
 categories: apple
 image: ecobee.jpeg
+imageAlt: "Ecobee thermostat"
 ---
 
 We’ve always been using an old simple thermostat for use with the house’s stove which uses a millivolt connection. This is the only heating appliance in the house, and there’s no AC (perks of living in Washington). But recently, I decided that it was time to upgrade to a smart thermostat.  

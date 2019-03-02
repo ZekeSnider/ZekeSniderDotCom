@@ -6,20 +6,20 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
+        <div class="contact-list">
+          <p class="footer-p">
             {% if site.author %}
               © {{ 'now' | date: "%Y" }} {{ site.author | escape }}
             {% else %}
               © {{ 'now' | date: "%Y" }} {{ site.title | escape }}
             {% endif %}
-            </li>
+          </p>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <p class="footer-p"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             {% endif %}
 
-            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>, <a href="{{ "/feed.json" | relative_url }}">via JSON Feed</a></p>
-        </ul>
+          <p class="rss-subscribe footer-p">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>, <a href="{{ "/feed.json" | relative_url }}">via JSON Feed</a></p>
+        </div>
       </div>
 
       <div class="footer-col footer-col-2">
@@ -43,7 +43,7 @@
           {% endif %}
 
           <li>
-            <a href="https://stackoverflow.com/users/7317954/zeke-s"><span class="icon icon--so"><img class="brand-icon" src="{{ site_url }}/assets/so-icon-color.png"</span><span class="username">Zeke S.</span></a>
+            <a href="https://stackoverflow.com/users/7317954/zeke-s"><span class="icon icon--so"><img class="brand-icon" src="{{ site_url }}/assets/so-icon-color.png" alt="Stack Overflow icon"</span><span class="username">Zeke S.</span></a>
           </li>
 
           {% if site.youtube_username %}

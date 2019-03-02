@@ -95,3 +95,54 @@ hr {
 		margin-bottom:15px;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.page-content, .site-footer {
+		background-color: #1d1d1d;
+		color: #e6e6e6;
+	}
+
+	a:hover { 
+	    color: #0000ff;
+	    text-decoration: none;
+	}
+
+	.site-footer {
+		border-top: 1px solid #565656;
+	}
+	.site-header {
+		background-color: #217e4e;
+		border-bottom: 1px solid #565656;
+	}
+
+	.site-title, .site-title:visited {
+		color: #e6e6e6;
+	}
+
+	.site-title {
+		color: #1d1d1d;
+	}
+	.site-nav .page-link {
+		color: #d5dddd;
+	}
+
+	a:visited {
+		color: #6997cd;
+	}
+
+	.post-meta {
+		color: #a3a3a3;
+	}
+
+	p {
+		color:white;
+	}
+}
+
+.footer-p {
+	margin-bottom: 0px;
+}
+
+.large-post-date {
+	font-size: 30px;
+}
